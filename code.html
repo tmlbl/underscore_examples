@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Underscore</title>
+</head>
+<body>
+  <h1>Map</h1>
+  <p id="map"></p>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+  <script src='http://code.jquery.com/jquery.min.js'></script>
+  <script>
+    var array = [15, 23, 45, 21];
+    array = _.reduce(array, function (memo, num) { return memo - num; }, 0);
+    $('#map').html(array);
+  </script>
+</body>
+</html>
